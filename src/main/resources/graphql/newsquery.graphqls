@@ -1,0 +1,30 @@
+type Query {
+
+    version:String!
+
+    # Get all news
+    allContent:[Covid]
+
+    # Get content by date
+    allContentByDate(date:String): Covid
+}
+
+type Mutation{
+    createCovid(
+        date:String!,
+        test:String,
+        death:String,
+        recovered:String):Covid!
+
+    deleteCovid(id:String!):Boolean
+}
+
+type Covid{
+    _id:ID!,
+    date:String,
+    test:String,
+    death:String,
+    recovered:String,
+}
+
+
