@@ -17,7 +17,7 @@ class CovidDao (private val covidRepository: CovidRepository){
                 death:String,
                 recovered:String,
                 test:String) = covidRepository.save(Covid(
-            _id = "",
+            _id = UUID.randomUUID().toString(),
             date = date,
             death = death,
             recovered =recovered,
