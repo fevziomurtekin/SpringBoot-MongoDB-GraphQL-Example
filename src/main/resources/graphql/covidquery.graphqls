@@ -2,7 +2,7 @@ type Query {
 
     version:String!
 
-    # Get all news
+    # Get all content
     allContent:[Covid]
 
     # Get content by date
