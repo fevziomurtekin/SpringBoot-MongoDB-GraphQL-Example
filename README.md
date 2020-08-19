@@ -9,3 +9,7 @@ This application has been developed for the [article](https://medium.com/p/70596
 - Spring Boot
 - MongoDB
 - GraphQL
+
+## Architecture
+
+![architecture](https://cdn-images-1.medium.com/max/640/1*UlwyknivLXuybwKQJjysFA.png)
