@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component
 @Component
 class CovidQuery(private val covidDao: CovidDao) : GraphQLQueryResolver {
 
-    fun allContent() = covidDao.getAllByDate()
+    fun allContent() = covidDao.findAll()
 
     fun allContentByDate(date:String) = covidDao.getContentByDate(date)
 

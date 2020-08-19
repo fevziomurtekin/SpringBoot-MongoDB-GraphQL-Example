@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository
 @Repository
 interface CovidRepository : MongoRepository<Covid,String> {
 
-    fun getAllByDate():MutableList<Covid>
+    //fun findAll():MutableList<Covid>
 
     fun findByDateLike(dates:String):Covid
 

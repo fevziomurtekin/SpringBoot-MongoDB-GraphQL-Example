@@ -11,7 +11,7 @@ class CovidDao (private val covidRepository: CovidRepository){
 
     fun getContentByDate(date:String) = covidRepository.findByDateLike(date)
 
-    fun getAllByDate() = covidRepository.getAllByDate()
+    fun findAll() = covidRepository.findAll()
 
     fun newData(date: String,
                 death:String,

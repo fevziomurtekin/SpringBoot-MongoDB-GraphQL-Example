@@ -5,6 +5,7 @@ type Query {
     # Get all content
     allContent:[Covid]
 
+
     # Get content by date
     allContentByDate(date:String): Covid
 }
